@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem tra dang nhap</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 1120px;
+        margin: 0 auto;
+    }
+    button{
+        padding: 10px;
+        border: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        color: #fff;
+        background-color: #4267b2;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <button>
+            Đăng nhập bằng facebook
+        </button>
+    </div>
+</body>
+
+<script>
+    var btn = document.querySelector('button')
+
+    btn.addEventListener('click',()=>{
+        window.open('/login',"_blank", "toolbar=no,scrollbars=no,status=no,titlebar=no,location=no,resizable=no,top=500,left=500,width=4000,height=2000")
+    })
+</script>
+
+</html>
